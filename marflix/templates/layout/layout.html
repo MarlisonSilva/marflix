@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Marflix</title>
+    <link rel="stylesheet" href="{% static 'geral/styles.css' %}">
+    {% block styles %}
+    {% endblock %}
+</head>
+<body>
+    <div>
+        <div id="sidebar">
+            <a href="{% url 'home' %}" id="anchor_icon_house" class="sidebar-item mt-5"><i id="icon_house" class="bi bi-house" style="font-size: 18px;"></i></a> 
+            <hr width="50%" size="1"/>          
+            <a href="{% url 'movie.create' %}" id="anchor_icon_plus" class="sidebar-item"><i id="icon_plus" class="bi bi-plus-circle" style="font-size: 18px;"></i></a>           
+        </div>
+        <div style="position: absolute; height: calc(100% - 40px); width: calc(100% - 50px); left: 50px; display: block;">
+            <div class="navbar" style="height: 40px;">
+                
+            </div>
+            <div class="content" style="padding-left: 32px;">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+
+    </div>
+    <script src="{% static 'geral/scripts.js' %}"></script>
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>

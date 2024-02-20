@@ -1,0 +1,127 @@
+body {
+    padding: 0; 
+    margin: 0.1px; 
+    background: rgb(21, 22, 70); background: linear-gradient(120deg, rgba(21, 22, 70, 1) 0%, rgba(28, 16, 65, 1) 23%, rgba(39, 12, 70, 1) 46%, rgba(25, 3, 40, 1) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sidebar {
+    position: absolute; 
+    height: 100%; 
+    width: 50px;  
+    background-color: rgba(5, 6, 16, .9); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    -webkit-box-shadow: 12px 0px 25px 22px rgba(5, 6, 16, .9);
+    -moz-box-shadow: 12px 0px 25px 22px rgba(5, 6, 16, .9);
+    box-shadow: 12px 0px 25px 22px rgba(5, 6, 16, .9);
+}
+
+.sidebar-item {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 8px; 
+    background-color: rgba(128, 128, 128, 0.085); 
+    width: 36px; 
+    height: 36px; 
+    color: white; 
+}
+
+.mt-2 {
+    margin-top: 4px;
+}
+
+.mt-3 {
+    margin-top: 6px;
+}
+
+.mt-4 {
+    margin-top: 8px;
+}
+
+.mt-5 {
+    margin-top: 10px;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.35); 
+}
+
+.modal {
+    position: fixed; 
+    left: 5vw; 
+    top: 5vh; 
+    min-height: 90vh; 
+    width: 90vw; 
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 0px 60px 30px rgba(5, 6, 16, .9);
+}
+
+.hidden {
+    display: none;
+}
+
+.close_modal {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: absolute; 
+    right: 0; 
+    top: 0;
+    width: 30px; 
+    height: 30px; 
+    color: white; 
+    cursor: pointer; 
+    margin: 5px;
+}
+
+
+.poster {
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.poster-content {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.poster-content img {
+    width: 200px; 
+    height: 280px; 
+    object-fit: cover;
+    border-radius: 13px;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.9);
+
+}
+
+.modal-content {
+
+}
+
+.details-media span {
+    background-color: rgba(21, 22, 70, .9);
+    border: 1.5px solid rgba(28, 16, 65, 1);
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 4px;
+}
+
+.btn-watch {
+    background-color: rgba(121, 84, 255, 0.9);
+    padding: 5px 6px;
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px solid rgba(42, 44, 140, .9);
+    border-radius: 5px;
+}
+
+.btn-watch:hover {
+    background-color: rgb(147, 120, 245);
+}
